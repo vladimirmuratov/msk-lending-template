@@ -11,12 +11,12 @@ export const PartnersBlock = ({partners = []}) => {
             }}
         >
             <Box
-            sx={{
-                marginBottom: {xs: '15px', sm: '30px'},
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px'
-            }}
+                sx={{
+                    marginBottom: {xs: '15px', sm: '30px'},
+                    // display: 'flex',
+                    // flexDirection: 'column',
+                    // gap: '10px'
+                }}
             >
                 <Typography
                     variant="h4"
@@ -24,6 +24,7 @@ export const PartnersBlock = ({partners = []}) => {
                         fontSize: {xs: 24, sm: 28},
                         fontWeight: 300,
                         color: 'var(--red)',
+                        marginBottom: {xs: '15px', sm: '30px'}
                     }}
                 >
                     ПЛАТНЫЕ СТАЦИОНАРЫ МОСКВЫ
@@ -34,16 +35,19 @@ export const PartnersBlock = ({partners = []}) => {
                         fontSize: {xs: 18, sm: 20},
                         fontWeight: 600,
                         color: 'var(--blue)',
+                        marginBottom: {xs: '10px', sm: '15px'}
                     }}
                 >
                     МСК Групп — официальный координатор по госпитализации в ведущие
-                    клиники России
+                    клиники России, ведомственные организации здравоохранения,
+                    федеральные медицинские учреждения Управления делами Президента РФ.
                 </Typography>
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 12, sm: 16},
-                        fontWeight: 300,
+                        fontSize: {xs: 14, sm: 18},
+                        color: 'var(--blue)',
+                        marginBottom: {xs: '10px', sm: '15px'}
                     }}
                 >
                     Мы сотрудничаем со всеми ведущими больницами Москвы и Московской области (кроме детских)
@@ -53,9 +57,23 @@ export const PartnersBlock = ({partners = []}) => {
                 <Typography
                     sx={{
                         fontSize: {xs: 14, sm: 18},
+                        fontWeight: 600,
+                        color: 'var(--blue)',
                     }}
                 >
                     Для вас всегда найдется место в палате.
+                </Typography>
+
+                <Typography
+                    sx={{
+                        fontSize: {xs: 18, sm: 20},
+                        fontWeight: 600,
+                        color: 'var(--blue)',
+                        textAlign: 'center',
+                        marginY: {xs: '15px', sm: '30px'}
+                    }}
+                >
+                    При обращении в сервис МСК-Групп - все расчеты ведутся по официальным ценам с конкретной медицинской организацией
                 </Typography>
 
             </Box>
