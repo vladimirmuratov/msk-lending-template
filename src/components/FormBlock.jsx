@@ -1,5 +1,5 @@
 import {Box, Typography} from '@mui/material'
-import {Form} from '@/components/Form'
+import {MessageForm} from '@/components/MessageForm'
 
 export const FormBlock = ({onFailed, onSuccess}) => {
     return (
@@ -40,7 +40,7 @@ export const FormBlock = ({onFailed, onSuccess}) => {
                 </Typography>
             </Box>
 
-            <Form onFailed={onFailed} onSuccess={onSuccess}/>
+            <MessageForm onFailed={onFailed} onSuccess={onSuccess}/>
 
         </Box>
     )
